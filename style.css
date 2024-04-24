@@ -13,18 +13,18 @@ body {
 
 h1 {
     color: #3a7bd5;
-    font-size: 48px; /* Aumenta o tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
-    font-family: 'Arial Black', sans-serif; /* Altera a fonte para uma fonte mais pesada */
+    font-size: 48px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-family: 'Arial Black', sans-serif; 
 }
 
 
 #timer {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .tempo {
@@ -35,7 +35,7 @@ h1 {
     font-size: 48px;
     text-align: center;
     transition: background-color 0.5s ease;
-    margin: 0 10px; /* Adiciona espaço entre os elementos */
+    margin: 0 10px; 
     margin-left: 100px;
     margin-right: 10px;
 }
@@ -64,72 +64,87 @@ h1 {
     border-radius: 20px;
     margin-bottom: 0px;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-around; /* Centraliza horizontalmente */
+    align-items: center; 
+    justify-content: space-around; 
 }
 
 
 #tempoDecorrido {
     color: #3a7bd5;
-    font-size: 48px; /* Aumenta o tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
-    font-family: 'Arial Black', sans-serif; /* Altera a fonte para uma fonte mais pesada */
+    font-size: 48px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-family: 'Arial Black', sans-serif; 
     
 }
 
 
 #scrollToBottomButton {
-    border-radius: 50%; /* Deixa o botão redondo */
-    background-color: #3a7bd5; /* Cor de fundo do botão */
-    color: white; /* Cor do ícone */
-    border: none; /* Remove a borda do botão */
-    width: 50px; /* Define a largura do botão */
-    height: 50px; /* Define a altura do botão */
-    font-size: 24px; /* Tamanho do ícone */
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    border-radius: 50%; 
+    background-color: #3a7bd5; 
+    color: white; 
+    border: none; 
+    width: 50px; 
+    height: 50px; 
+    font-size: 24px; 
+    cursor: pointer; 
 }
 
 #scrollToBottomButton:hover {
-    background-color: #235592; /* Cor de fundo do botão quando hover */
+    background-color: #235592;
 }
 
 #scrollToTop {
-    border-radius: 50%; /* Deixa o botão redondo */
-    background-color: #3a7bd5; /* Cor de fundo do botão */
-    color: white; /* Cor do ícone */
-    border: none; /* Remove a borda do botão */
-    width: 50px; /* Define a largura do botão */
-    height: 50px; /* Define a altura do botão */
-    font-size: 24px; /* Tamanho do ícone */
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    border-radius: 50%; 
+    background-color: #3a7bd5; 
+    color: white; 
+    border: none; 
+    width: 50px; 
+    height: 50px; 
+    font-size: 24px; 
+    cursor: pointer; 
     margin-bottom: 200px;
 }
 
 #scrollToTop:hover {
-    background-color: #235592; /* Cor de fundo do botão quando hover */
+    background-color: #235592; 
 }
 
 @media (max-width: 1200px), (max-height: 1200px) {
     .tempo {
-        font-size: 32px; /* Altera o tamanho da fonte dos elementos .tempo */
-        padding: 15px; /* Altera o preenchimento dos elementos .tempo */
+        font-size: 32px; 
+        padding: 15px; 
     }
 
     .unidade {
-        font-size: 16px; /* Altera o tamanho da fonte dos elementos .unidade */
+        font-size: 16px; 
     }
 
     #scrollToBottomButton {
-        font-size: 32px; /* Altera o tamanho do botão */
-        width: 60px; /* Define a largura do botão */
-        height: 60px; /* Define a altura do botão */
-        border-radius: 50%; /* Torna o botão redondo */
-        background-color: #3a7bd5; /* Cor de fundo do botão */
-        color: white; /* Cor do ícone do botão */
-        border: none; /* Remove a borda do botão */
-        cursor: pointer; /* Altera o cursor para parecer clicável */
+        font-size: 32px; 
+        width: 60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        background-color: #3a7bd5; 
+        color: white; 
+        border: none; 
+        cursor: pointer; 
+    }
+}
+
+@media (max-width: 1000px), (max-height: 700px) {
+    #scrollToBottomButton {
+      margin-bottom: 1px;
+    }
+
+    #tempoDecorrido {
+        margin-bottom: 10px;
+    }
+
+    #scrollToBottomButton,
+    #scrollToTop {
+        display: none;
     }
 }
 

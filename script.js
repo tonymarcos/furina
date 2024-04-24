@@ -1,3 +1,4 @@
+
 const dataDeReferencia = new Date('2023-04-12T16:00:00Z');
 
 function atualizarTimer() {
@@ -22,12 +23,14 @@ function atualizarTimer() {
 
 
 function atualizarTempoDecorrido(dias, horas, minutos) {
-    const anos = Math.floor(dias / 365);
-    const meses = Math.floor(dias / 30);
-    const semanas = Math.floor((dias % 30) / 7);
-    const diasRestantes = (dias % 30) % 7;
+    const anos = Math.floor(dias / 365); // Calcular anos completos
+    const diasRestantes = dias % 365; // Dias restantes após calcular os anos
+    const meses = Math.floor(diasRestantes / 30); // Calcular meses completos
+    const diasRestantesMeses = diasRestantes % 30; // Dias restantes após calcular os meses
+    const semanas = Math.floor(diasRestantesMeses / 7); // Calcular semanas completas
+    const diasRestantesSemanas = diasRestantesMeses % 7; // Dias restantes após calcular as semanas
 
-    const textoTempoDecorrido = `Ou seja: ${anos} ano(s), ${meses} mês(es), ${semanas} semana(s) e ${diasRestantes} dia(s).`;
+    const textoTempoDecorrido = `Ou seja: ${anos} ano(s), ${meses} mês(es), ${semanas} semana(s) e ${diasRestantesSemanas} dia(s).`;
 
     document.getElementById('tempoDecorrido').textContent = textoTempoDecorrido;
 }

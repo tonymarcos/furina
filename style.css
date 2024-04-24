@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #3a7bd5;
+    font-size: 48px; /* Aumenta o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    font-family: 'Arial Black', sans-serif; /* Altera a fonte para uma fonte mais pesada */
+}
+
+
+#timer {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.tempo {
+    background-color: #3a7bd5;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    margin: 0 10px; /* Adiciona espaço entre os elementos */
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.tempo:hover {
+    background-color: #235592;
+}
+
+.unidade {
+    font-size: 18px;
+}
+
+.imagem {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.textos {
+    background-color: rgb(2, 67, 141);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Centraliza horizontalmente */
+}
+
+
+#tempoDecorrido {
+    color: #3a7bd5;
+    font-size: 48px; /* Aumenta o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    font-family: 'Arial Black', sans-serif; /* Altera a fonte para uma fonte mais pesada */
+    
+}
+
+
+#scrollToBottomButton {
+    border-radius: 50%; /* Deixa o botão redondo */
+    background-color: #3a7bd5; /* Cor de fundo do botão */
+    color: white; /* Cor do ícone */
+    border: none; /* Remove a borda do botão */
+    width: 50px; /* Define a largura do botão */
+    height: 50px; /* Define a altura do botão */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
+
+#scrollToBottomButton:hover {
+    background-color: #235592; /* Cor de fundo do botão quando hover */
+}
+
+#scrollToTop {
+    border-radius: 50%; /* Deixa o botão redondo */
+    background-color: #3a7bd5; /* Cor de fundo do botão */
+    color: white; /* Cor do ícone */
+    border: none; /* Remove a borda do botão */
+    width: 50px; /* Define a largura do botão */
+    height: 50px; /* Define a altura do botão */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    margin-bottom: 200px;
+}
+
+#scrollToTop:hover {
+    background-color: #235592; /* Cor de fundo do botão quando hover */
+}
+
+@media (max-width: 1200px), (max-height: 1200px) {
+    .tempo {
+        font-size: 32px; /* Altera o tamanho da fonte dos elementos .tempo */
+        padding: 15px; /* Altera o preenchimento dos elementos .tempo */
+    }
+
+    .unidade {
+        font-size: 16px; /* Altera o tamanho da fonte dos elementos .unidade */
+    }
+
+    #scrollToBottomButton {
+        font-size: 32px; /* Altera o tamanho do botão */
+        width: 60px; /* Define a largura do botão */
+        height: 60px; /* Define a altura do botão */
+        border-radius: 50%; /* Torna o botão redondo */
+        background-color: #3a7bd5; /* Cor de fundo do botão */
+        color: white; /* Cor do ícone do botão */
+        border: none; /* Remove a borda do botão */
+        cursor: pointer; /* Altera o cursor para parecer clicável */
+    }
+}
+
+
+

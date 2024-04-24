@@ -146,6 +146,19 @@ h1 {
     #scrollToTop {
         display: none;
     }
+
+    .tempo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 30px;
+
+
+    }
+
+    
 }
 
 

@@ -8,35 +8,50 @@
 </head>
 <body>
     <div class="container">
-        <h1>Tempo sem ir atrás de outro personagem 5 estrelas além da furina</h1>
+        <h1>Tempo gasto para pegar a Furina C6</h1>
         <div class="textos">
             <div id="timer">
                 <div class="tempo">
-                    <span id="dias"></span>
+                    <span id="dias">440</span>
                     <span class="unidade">Dias</span>
                 </div>
                 <div class="tempo">
-                    <span id="horas"></span>
+                    <span id="horas">9</span>
                     <span class="unidade">Horas</span>
                 </div>
                 <div class="tempo">
-                    <span id="minutos"></span>
+                    <span id="minutos">15</span>
                     <span class="unidade">Minutos</span>
                 </div>
                 <div class="tempo">
-                    <span id="segundos"></span>
+                    <span id="segundos">22</span>
                     <span class="unidade">Segundos</span>
                 </div>
                 <button id="scrollToBottomButton"><i class="fas fa-arrow-down"></i></button>
             </div>
         </div>
         <div class="imagem">
-            <img src="fundo.png" alt="Sua Imagem">
+            <img src="fundo.png">
         </div>
-        <div id="tempoDecorrido"></div> <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
-        
+        <div id="tempoDecorrido">Ou seja: 1 ano(s), 2 mês(es), 2 semana(s) e 1 dia(s).</div>
+        <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Scripts para rolagem
+        document.getElementById('scrollToBottomButton').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
